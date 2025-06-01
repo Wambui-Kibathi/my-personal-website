@@ -4,10 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>My Personal Website</title>
 </head>
 <body>
-   <h1>Hello World!</h1> 
+   <nav id="desktop-nav">
+    <div class="logo">Wambui Kibathi</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+   </nav>
+   <nav id="hamburger-nav">
+    <div class="logo">Wambui Kibathi</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+   </nav>
+   <section id="profile">
+     <div class="section__pic-container">
+        <img src="./images/profile-pic-1.jpeg" alt="Wambui Kibathi profile picture">
+     </div>
+     <div class="section__text">
+       <p class="section__text__p1">Hello, I'm</p> 
+       <h1 class="title">Wambui Kibathi</h1>
+       <p class="section__text__p2">Software Engineering Student</p>
+       <div class="btn-container">
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+        Contact Info
+        </button>
+       </div>
+       <div id="socials-container">
+        <img src="./images/linkedin.png" alt="My Linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/feed/?trk=onboarding-landing'">
+        <img src="./images/github.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/Wambui-Kibathi/my-personal-website'">
+        <img src="./images/instagram.png" alt="My Instagram profile" class="icon" onclick="location.href='https://www.instagram.com/zelda.kibathi/'">
+       </div>
+     </div>
+   </section>
+   <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="section__pic-container">
+            <img src="./images/profile-pic2.jpeg" alt="Profile picture" class="about-pic">
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./images/experience.png" alt="experience icon" class="icon">
+                    <h3>Experience</h3>
+                    <p>HTML, CSS and a bit of JavaScript <br>Frontend Development</p> 
+                </div>
+                <div class="details-container">
+                    <img src="./images/education.png" alt="education icon" class="icon">
+                    <h3>Education</h3>
+                    <p>Currently doing a short course in Software Engineering <br> At Moringa School</p> 
+                </div>
+            </div>
+            <div class="text-container">
+                 <p>
+                    I am a beginner web developer with a growing passion for creating clean, responsive and user-friendly websites. My journey began with HTML and CSS, and I am currently learning JavaScript to bring more interactivity to my projects.
+                    As an aspiring video game developer, I believe web development gives me a strong foundation in logic, design, and user experience — all of which are essential in game development too.  
+                 </p>
+            </div>
+        </div>
+    </div>
+    <img src="./images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"> 
+   </section>
+   <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+           <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+                <article>
+                    <img src="./images/check.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>HTML</h3>
+                        <p>Basic</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./images/check.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>CSS</h3>
+                        <p>Basic</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./images/check.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>JavaScript</h3>
+                        <p>Currently Learning</p>
+                    </div>
+                </article>
+            </div>
+           </div> 
+        </div>
+    </div>
+    <img src="./images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+   </section>
+   <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="./images/email.png" alt="mail icon" class="icon contact-icon">
+            <p><a href="mailto:zeldabobo02@gmail.com">zeldabobo02@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img src="./images/linkedin.png" alt="linkedin icon" class="icon linkedin">
+            <p><a href="https://www.linkedin.com/feed/?trk=onboarding-landing">Linkedin</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img src="./images/instagram.png" alt="instagram icon" class="icon instagram">
+            <p><a href="https://www.instagram.com/zelda.kibathi/">Instagram</a></p>
+        </div>
+    </div>
+   </section>
+   <footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul> 
+        </div>
+    </nav>
+    <p>Copyright &#169; 2025 Wambui Kibathi. All Rights Reserved.</p>
+   </footer>
    <script src="script.js"></script>
 </body>
 </html>

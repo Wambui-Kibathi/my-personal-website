@@ -1,3 +1,7 @@
-const h2 = document.createElement("h2");
-h2.textContent = "This content added by JavaScript";
-document.querySelector("body").appendChild(h2);
+function toggleMenu() {
+   const menu = document.querySelector(".menu-links");
+   const icon = document.querySelector(".hamburger-icon");
+
+   menu.classList.toggle("menu-links-open");
+   icon.classList.toggle("open");
+}  
